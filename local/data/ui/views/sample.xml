@@ -21,7 +21,7 @@
     <panel>
       <viz type="viz_str_multiline.str_multiline">
         <search>
-          <query>| makeresults | eval text = "test2-1" | table text</query>
+          <query>| makeresults | eval text = "test2-1", icon = "car" | table text icon</query>
           <earliest>-24h@h</earliest>
           <latest>now</latest>
           <sampleRatio>1</sampleRatio>
@@ -35,7 +35,7 @@
     <panel>
       <viz type="viz_str_multiline.str_multiline">
         <search>
-          <query>| makeresults | eval text = split("test2-2,test2-2", ",") | table text</query>
+          <query>| makeresults | eval text = split("test2-2,test2-2", ","), icon = "car" | table text icon</query>
           <earliest>-24h@h</earliest>
           <latest>now</latest>
           <sampleRatio>1</sampleRatio>
@@ -52,7 +52,7 @@
     <panel>
       <viz type="viz_str_multiline.str_multiline">
         <search>
-          <query>| makeresults | eval text = "test3-1" | table text</query>
+          <query>| makeresults | eval text = "test3-1", icon = "car" | table text icon</query>
           <earliest>-24h@h</earliest>
           <latest>now</latest>
           <sampleRatio>1</sampleRatio>
@@ -66,7 +66,7 @@
     <panel>
       <viz type="viz_str_multiline.str_multiline">
         <search>
-          <query>| makeresults | eval text = "test3-2" | table text</query>
+          <query>| makeresults | eval text = "test3-2", icon = "car" | table text icon</query>
           <earliest>-24h@h</earliest>
           <latest>now</latest>
           <sampleRatio>1</sampleRatio>
@@ -80,7 +80,7 @@
     <panel>
       <viz type="viz_str_multiline.str_multiline">
         <search>
-          <query>| makeresults | eval text = "test3-3" | table text</query>
+          <query>| makeresults | eval text = "test3-3", icon = "car" | table text icon</query>
           <earliest>-24h@h</earliest>
           <latest>now</latest>
           <sampleRatio>1</sampleRatio>
