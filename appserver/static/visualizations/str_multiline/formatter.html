@@ -1,3 +1,16 @@
 <form class="splunk-formatter-section" section-label="format">
-    <!-- Add html here to create formatter options -->
+  <!-- Add html here to create formatter options -->
+  <splunk-control-group label="Text Alignment">
+    <splunk-radio-input name="{{VIZ_NAMESPACE}}.textAlign" value="center">
+      <option value="Left">Left</option>
+      <option value="center">Center</option>
+      <option value="Right">Right</option>
+    </splunk-radio-input>
+  </splunk-control-group>
+
+  <splunk-control-group label="Font Size">
+    <splunk-text-input name="{{VIZ_NAMESPACE}}.fontSize" value="">
+    </splunk-text-input>
+  </splunk-control-group>
+
 </form>

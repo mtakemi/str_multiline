@@ -1,0 +1,114 @@
+<dashboard version="1.1">
+  <label>sample</label>
+  <row>
+    <panel>
+      <viz type="viz_str_multiline.str_multiline">
+        <search>
+          <query>| makeresults | eval text = "test1" | table text</query>
+          <earliest>-24h@h</earliest>
+          <latest>now</latest>
+          <sampleRatio>1</sampleRatio>
+        </search>
+        <option name="drilldown">none</option>
+        <option name="height">186</option>
+        <option name="trellis.enabled">0</option>
+        <option name="trellis.scales.shared">1</option>
+        <option name="trellis.size">medium</option>
+      </viz>
+    </panel>
+  </row>
+  <row>
+    <panel>
+      <viz type="viz_str_multiline.str_multiline">
+        <search>
+          <query>| makeresults | eval text = "test2-1" | table text</query>
+          <earliest>-24h@h</earliest>
+          <latest>now</latest>
+          <sampleRatio>1</sampleRatio>
+        </search>
+        <option name="drilldown">none</option>
+        <option name="trellis.enabled">0</option>
+        <option name="trellis.scales.shared">1</option>
+        <option name="trellis.size">medium</option>
+      </viz>
+    </panel>
+    <panel>
+      <viz type="viz_str_multiline.str_multiline">
+        <search>
+          <query>| makeresults | eval text = split("test2-2,test2-2", ",") | table text</query>
+          <earliest>-24h@h</earliest>
+          <latest>now</latest>
+          <sampleRatio>1</sampleRatio>
+        </search>
+        <option name="drilldown">none</option>
+        <option name="refresh.display">progressbar</option>
+        <option name="trellis.enabled">0</option>
+        <option name="trellis.scales.shared">1</option>
+        <option name="trellis.size">medium</option>
+      </viz>
+    </panel>
+  </row>
+  <row>
+    <panel>
+      <viz type="viz_str_multiline.str_multiline">
+        <search>
+          <query>| makeresults | eval text = "test3-1" | table text</query>
+          <earliest>-24h@h</earliest>
+          <latest>now</latest>
+          <sampleRatio>1</sampleRatio>
+        </search>
+        <option name="drilldown">none</option>
+        <option name="trellis.enabled">0</option>
+        <option name="trellis.scales.shared">1</option>
+        <option name="trellis.size">medium</option>
+      </viz>
+    </panel>
+    <panel>
+      <viz type="viz_str_multiline.str_multiline">
+        <search>
+          <query>| makeresults | eval text = "test3-2" | table text</query>
+          <earliest>-24h@h</earliest>
+          <latest>now</latest>
+          <sampleRatio>1</sampleRatio>
+        </search>
+        <option name="drilldown">none</option>
+        <option name="trellis.enabled">0</option>
+        <option name="trellis.scales.shared">1</option>
+        <option name="trellis.size">medium</option>
+      </viz>
+    </panel>
+    <panel>
+      <viz type="viz_str_multiline.str_multiline">
+        <search>
+          <query>| makeresults | eval text = "test3-3" | table text</query>
+          <earliest>-24h@h</earliest>
+          <latest>now</latest>
+          <sampleRatio>1</sampleRatio>
+        </search>
+        <option name="drilldown">none</option>
+        <option name="trellis.enabled">0</option>
+        <option name="trellis.scales.shared">1</option>
+        <option name="trellis.size">medium</option>
+      </viz>
+    </panel>
+  </row>
+  <row>
+    <panel>
+      <viz type="viz_str_multiline.str_multiline">
+        <search>
+          <query>| makeresults | eval text = split("test2-2,test2-2,test1234567-890", ",") | eval icon=split("car,bus,plane", ",") |eval color=split("red,blue,orange", ",") | table text icon color</query>
+          <earliest>-24h@h</earliest>
+          <latest>now</latest>
+          <sampleRatio>1</sampleRatio>
+        </search>
+        <option name="drilldown">none</option>
+        <option name="height">355</option>
+        <option name="trellis.enabled">0</option>
+        <option name="trellis.scales.shared">1</option>
+        <option name="trellis.size">medium</option>
+        <option name="viz_str_multiline.str_multiline.fontSize">90</option>
+        <option name="viz_str_multiline.str_multiline.textAlign">center</option>
+      </viz>
+    </panel>
+  </row>
+</dashboard>
