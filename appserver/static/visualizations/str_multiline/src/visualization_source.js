@@ -133,7 +133,7 @@ function(
         fontSize = this.fontSize
       }
       let len = target.text().length;
-      console.log('resizeFont', target.width(), fontSize, len, target.text().split("\n"), target)
+      //console.log('resizeFont', target.width(), fontSize, len, target.text().split("\n"), target, $.fn.jquery)
       target.css('font-size', fontSize + "px");
       target.css('line-height', fontSize + "px");
     },
