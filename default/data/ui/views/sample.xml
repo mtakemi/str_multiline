@@ -2,7 +2,7 @@
   <label>sample</label>
   <row>
     <panel>
-      <viz type="viz_str_multiline.str_multiline">
+      <viz type="str_multiline.str_multiline">
         <search>
           <query>| makeresults | eval text = "test1" | table text</query>
           <earliest>-24h@h</earliest>
@@ -19,7 +19,7 @@
   </row>
   <row>
     <panel>
-      <viz type="viz_str_multiline.str_multiline">
+      <viz type="str_multiline.str_multiline">
         <search>
           <query>| makeresults | eval text = "test2-1", icon = "car" | table text icon</query>
           <earliest>-24h@h</earliest>
@@ -33,7 +33,7 @@
       </viz>
     </panel>
     <panel>
-      <viz type="viz_str_multiline.str_multiline">
+      <viz type="str_multiline.str_multiline">
         <search>
           <query>| makeresults | eval text = split("test2-2,test2-2", ","), icon = "car" | table text icon</query>
           <earliest>-24h@h</earliest>
@@ -50,7 +50,7 @@
   </row>
   <row>
     <panel>
-      <viz type="viz_str_multiline.str_multiline">
+      <viz type="str_multiline.str_multiline">
         <search>
           <query>| makeresults | eval text = "test3-1", icon = "car" | table text icon</query>
           <earliest>-24h@h</earliest>
@@ -64,7 +64,7 @@
       </viz>
     </panel>
     <panel>
-      <viz type="viz_str_multiline.str_multiline">
+      <viz type="str_multiline.str_multiline">
         <search>
           <query>| makeresults | eval text = "test3-2", icon = "car" | table text icon</query>
           <earliest>-24h@h</earliest>
@@ -78,7 +78,7 @@
       </viz>
     </panel>
     <panel>
-      <viz type="viz_str_multiline.str_multiline">
+      <viz type="str_multiline.str_multiline">
         <search>
           <query>| makeresults | eval text = "test3-3", icon = "car" | table text icon</query>
           <earliest>-24h@h</earliest>
@@ -94,7 +94,7 @@
   </row>
   <row>
     <panel>
-      <viz type="viz_str_multiline.str_multiline">
+      <viz type="str_multiline.str_multiline">
         <search>
           <query>| makeresults | eval text = split("test2-2,test2-2,test1234567-890", ",") | eval icon=split("car,bus,plane", ",") |eval color=split("red,blue,orange", ",") | table text icon color</query>
           <earliest>-24h@h</earliest>
@@ -106,8 +106,8 @@
         <option name="trellis.enabled">0</option>
         <option name="trellis.scales.shared">1</option>
         <option name="trellis.size">medium</option>
-        <option name="viz_str_multiline.str_multiline.fontSize">90</option>
-        <option name="viz_str_multiline.str_multiline.textAlign">center</option>
+        <option name="str_multiline.str_multiline.fontSize">90</option>
+        <option name="str_multiline.str_multiline.textAlign">center</option>
       </viz>
     </panel>
   </row>

@@ -1,6 +1,6 @@
 {
   "name": "str_multiline",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Visualization app..",
   "main": "visualization.js",
   "scripts": {
